@@ -2,82 +2,190 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name - Data Analyst Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Data Analyst Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+    }
+    .sidebar {
+      width: 300px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+      position: fixed;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    .sidebar img {
+      width: 100%;
+      border-radius: 50%;
+    }
+    .sidebar h2 {
+      margin-top: 15px;
+      font-size: 1.5rem;
+    }
+    .sidebar p {
+      font-size: 0.95rem;
+    }
+    .sidebar nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar nav ul li {
+      margin: 10px 0;
+    }
+    .sidebar nav ul li a {
+      text-decoration: none;
+      color: #007acc;
+    }
+    .main-content {
+      margin-left: 320px;
+      padding: 40px;
+      max-width: 900px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      color: #2c3e50;
+    }
+    .project, .experience, .blog {
+      margin-top: 20px;
+      padding: 15px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .project h3, .experience h3, .blog h3 {
+      margin: 0;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact button {
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Banner -->
-  <section class="banner">
-    <div class="banner-content">
-      <h1>Your Name</h1>
-      <p>Data Analyst | Power BI & Tableau Developer | Python | SQL</p>
-      <a href="#contact" class="btn">Get in Touch</a>
-    </div>
-  </section>
+  <div class="sidebar">
+    <img src="profile.jpg" alt="Profile Photo">
+    <h2>Your Name</h2>
+    <p>Data Analyst | Python Automation Engineer</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main-content">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Data Analyst and Python Automation Engineer with 2 years of experience in automating workflows, data analysis, and visualization. Proficient in SQL, Python, and ETL processes. Skilled in building dashboards and automation solutions to optimize operations and generate insights.</p>
+    </section>
 
-  <!-- About -->
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>Hello! I'm a passionate data analyst with expertise in turning raw data into actionable insights using Power BI, Tableau, SQL, and Python. I’ve worked on real-world business dashboards, cleaned messy datasets, and love visual storytelling with data.</p>
-  </section>
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <p>Python, SQL, ETL & EDA, MongoDB, Power BI, Seaborn, Machine Learning, Scikit-Learn, R, Git, GitHub, Statistics, Data Visualization, Data Processing, PySpark, Web Scraping</p>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="container">
-    <h2>Projects</h2>
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="experience">
+        <h3>Data Analyst & Python Automation Engineer - Analogica Software Dev Pvt Ltd</h3>
+        <p>03/2023 – Present</p>
+        <ul>
+          <li>Developed Python scripts to automate data collection and cleaning.</li>
+          <li>Built SQL ETL pipelines for structured data analysis.</li>
+          <li>Designed Power BI dashboards to track KPIs and trends.</li>
+          <li>Performed EDA for business insights and strategy development.</li>
+        </ul>
+      </div>
+      <div class="experience">
+        <h3>Intern - Python Automation Engineer</h3>
+        <p>06/2022 – 01/2023</p>
+        <p>Analogica Software Dev Pvt Ltd</p>
+      </div>
+    </section>
 
-    <div class="project-card">
-      <h3>🔍 Sales Dashboard</h3>
-      <p>Interactive Power BI dashboard for regional sales performance.</p>
-      <a href="https://github.com/your-username/sales-dashboard" target="_blank">GitHub Repo</a>
-    </div>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Crop & Fertilizer Recommendation System</h3>
+        <p>Flask app using Random Forest to recommend crops and fertilizers. <a href="https://github.com/1sumer/Agriculture_Pridiction" target="_blank">GitHub</a></p>
+      </div>
+      <div class="project">
+        <h3>Global Superstore Sales Profitability Analysis</h3>
+        <p>Power BI and SQL project analyzing global sales. Visuals created for KPIs and regional insights.</p>
+      </div>
+      <div class="project">
+        <h3>IMDb Movie Recommender System</h3>
+        <p>Personalized movie recommender using Scikit-learn and Pandas.</p>
+      </div>
+      <div class="project">
+        <h3>Automated Bulk Email Sender</h3>
+        <p>Python app using SMTP and Tkinter to send bulk emails with a user-friendly GUI.</p>
+      </div>
+    </section>
 
-    <div class="project-card">
-      <h3>📊 Tableau Product Analysis</h3>
-      <p>Tableau dashboard revealing product trends across quarters.</p>
-      <a href="https://github.com/your-username/tableau-analysis" target="_blank">GitHub Repo</a>
-    </div>
+    <section id="blogs">
+      <h2>Blogs</h2>
+      <div class="blog">
+        <h3>Python's OOP Revolution</h3>
+        <p>How OOP enhances modular and scalable development in Python. <a href="#">Read more</a></p>
+      </div>
+      <div class="blog">
+        <h3>The Importance of SQL in Today’s World</h3>
+        <p>Overview of SQL's role in modern data-driven decision making. <a href="#">Read more</a></p>
+      </div>
+      <div class="blog">
+        <h3>Exploring the Core Principles of Decision Trees</h3>
+        <p>Decision trees explained through practical examples. <a href="#">Read more</a></p>
+      </div>
+    </section>
 
-    <div class="project-card">
-      <h3>📂 PDF Data Extraction</h3>
-      <p>Python automation to extract, clean, and store data from 34 PDFs into MySQL and visualize in Power BI.</p>
-      <a href="https://github.com/your-username/pdf-to-powerbi" target="_blank">GitHub Repo</a>
-    </div>
-  </section>
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
-  <!-- Experience -->
-  <section id="experience" class="container">
-    <h2>Experience</h2>
-    <div class="exp-card">
-      <h3>Teal Group - Data Analyst Intern</h3>
-      <p>Built Power BI dashboards for ship construction cost tracking, resource planning, and issue resolution analysis.</p>
-      <p><strong>Tools:</strong> Power BI, DAX, SQL, Excel</p>
-    </div>
-    <div class="exp-card">
-      <h3>Freelance Dashboard Developer</h3>
-      <p>Created dashboards for local businesses in retail and logistics. Focused on sales analysis, delivery efficiency, and financial reporting.</p>
-    </div>
-  </section>
-
-  <!-- Blogs -->
-  <section id="blogs" class="container">
-    <h2>Blogs & Articles</h2>
-    <ul>
-      <li><a href="https://medium.com/@yourhandle/power-bi-vs-tableau" target="_blank">Power BI vs Tableau: A Practical Comparison</a></li>
-      <li><a href="https://medium.com/@yourhandle/top-10-dax-functions" target="_blank">Top 10 DAX Functions Every Analyst Should Know</a></li>
-    </ul>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="container">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> your.email@example.com</p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourname" target="_blank">linkedin.com/in/yourname</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Your Name | Built with HTML & CSS</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
